@@ -11,7 +11,7 @@ const lst = [
 
 
 const PostPage = () => {
-  const posts = lst.map((item) => <Post key={item.id} description={item.description} img={item.img} title={item.title} publlished={item.publlished}/>)
+  const posts = lst.map((item) => <Post id={item.id} description={item.description} img={item.img} title={item.title} publlished={item.publlished}/>)
 
   return <div>
     {posts}     

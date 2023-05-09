@@ -1,13 +1,12 @@
 import './App.css';
-import AboutMe from './pages/AboueMe';
+import AboutMe from './pages/AbouteMe';
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
 import { Routes, Route } from "react-router-dom";
 import Contact from './pages/Contact';
 import NewPost from './pages/NewPost';
-import Login from './pages/Login';
-import PostById from './components/PostById'
-
+import PostById from './pages/PostById'
+import SignIn from './components/SignIn';
 
 function App() {
   return (
@@ -18,10 +17,10 @@ function App() {
         <Route index element={<Home/>} />
         <Route path="about" element={<AboutMe/>} />
         <Route path="contact" element={<Contact/>} />
-        <Route path="/posts/:id" component={PostById} />
+        <Route path="/posts/:id" element={<PostById/>} />
         <Route path="new_post" element={<NewPost/>} />
 
-        <Route path="login" element={<Login/>} />
+        <Route path="login" element={<SignIn/>} />
       </Route>
     </Routes>
   

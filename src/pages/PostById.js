@@ -14,7 +14,7 @@ const PostById = () => {
   return (
     <div>
       <Post
-        key={post.id}
+        id={post.id}
         description={post.description}
         img={post.img}
         title={post.title}
